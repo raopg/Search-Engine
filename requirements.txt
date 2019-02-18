@@ -1,0 +1,7 @@
+pymongo
+mongodb
+mongoengine
+flask
+bs4
+nltk
+### pip3 install -r requirements.txt ###

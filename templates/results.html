@@ -1,0 +1,41 @@
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <link rel="icon" href="../static/img/favicon.png">
+
+      <link rel="stylesheet" href="../static/results.css">
+      <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      -->
+        <title>Zot Search</title>
+  </head>
+  <body>
+      
+      <header class = "search">
+        <div class="top-bar">
+            <a href="/"><img class = "logo" src="../static/img/anteater.jpg" /></a>
+          <form id="search-form" method="POST" action="/results">
+            <input class="search-bar" name = "query_str" type="search" autofocus value = "{{query_str}}" onfocus = "this.value = this.value;" x-webkit-speech required/>
+            <input class="search-button button" type="submit" value="Search" />
+          </form>
+        </span>
+    </div>
+        </div>
+      </header>
+      <div class = "results-box">
+          {% if error_message %}
+            <p> {{error_message}} </p>
+          {% endif %}
+          <div class = "search-results">
+
+                {% for result in results %}
+                    <h2><a href="{{result['url']}}">{{result["title"]}}</a></h2>
+                    <p><a href = "{{result['url']}}" class = "link">{{result["pretty_url"]}}</a></p>
+                    <br>
+                    <br>
+                {% endfor %}
+            </div>
+      </div>
+  </body>
+</html>

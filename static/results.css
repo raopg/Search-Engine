@@ -1,0 +1,96 @@
+.search {
+	text-align: center;
+	clear: both;
+	margin: 0 0 0 0;
+}
+.top-bar {
+    background-image: url('../static/img/uci_bg.jpg');
+    height: 140px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+  }
+.button {
+	font-weight: bold;
+    font-family: arial;
+    color: blue;
+}
+header{
+    
+    box-shadow: 2px auto; 
+}
+.search-bar {
+    display: inline;
+    max-width: 80%;
+    box-shadow:2px 2px 2px  lightslategrey;
+    margin: 10px auto;
+}
+
+.search input {
+	
+	width: 570px;
+	border: 1px solid #D8D8D8;
+	padding: 5px;
+	font-size: 11pt;
+/*	background: url('images/microphone.png') no-repeat;
+	background-position: right;
+	background-size: 4.25%;*/
+}
+.search-button {
+    max-width: 5%;
+	margin: 14px 7px 0 5px;
+	padding: 7px 8px;
+	border-radius: 2px;
+	border: 1px solid #D0D0D0;
+	color: #444444;
+	background-image: -moz-linear-gradient(top, #F5F5F5 0%, #F0F0F0 100%);
+	background-image: -o-linear-gradient(top, #F5F5F5 0%, #F0F0F0 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #F5F5F5), color-stop(1, #F0F0F0));
+	background-image: -webkit-linear-gradient(top, #F5F5F5 0%, #F0F0F0 100%);
+	background-image: linear-gradient(to bottom, #F5F5F5 0%, #F0F0F0 100%);
+}
+
+.search-button:hover {
+	box-shadow: 1px 1px 1px rgba(0,0,0,.1);
+}
+
+.logo{
+    height: 90px;
+    width: 150px;
+    overflow: hidden;
+    display: inline;
+}
+
+
+.search-results {
+    width : 40%;
+    margin-bottom: 23px;
+  }
+  
+  .search-results h2, .search-results p {
+    margin: 0;
+    display: block;
+  }
+  
+  .search-results h2 a{
+    text-decoration: underline;
+    color: rgb(26, 13, 171);
+    font-weight: normal;
+    font-size: 18px;
+    
+  }
+  .search-results h2:hover p:hover{
+    text-decoration: underline;
+  }
+  
+  .search-results b:hover{
+      text-decoration: underline;
+  }
+  .link {
+    color: #006621;
+    line-height: 16px;
+    text-decoration: none;
+  }
+
+
+  
